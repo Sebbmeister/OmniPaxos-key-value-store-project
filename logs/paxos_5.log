@@ -1,0 +1,171 @@
+May 12 13:41:25.388 INFO Paxos component pid: 5 created!
+May 12 13:41:29.197 DEBG Newly elected leader: Ballot { n: 0, priority: 0, pid: 4 }
+May 12 13:41:29.824 DEBG Newly elected leader: Ballot { n: 0, priority: 0, pid: 5 }
+May 12 13:41:29.880 DEBG Handling promise from 1 in Prepare phase
+May 12 13:41:29.914 DEBG Handling promise from 2 in Prepare phase
+May 12 13:41:29.918 TRCE Got Accepted from 2, idx: 0, chosen_idx: 0
+May 12 13:41:30.018 DEBG Self role Leader, phase Accept. Incoming message Promise Accept from 4
+May 12 13:41:30.324 TRCE Got Accepted from 4, idx: 0, chosen_idx: 0
+May 12 13:41:30.329 DEBG Self role Leader, phase Accept. Incoming message Promise Accept from 3
+May 12 13:41:30.331 TRCE Got Accepted from 1, idx: 0, chosen_idx: 0
+May 12 13:41:30.714 TRCE Got Accepted from 3, idx: 0, chosen_idx: 0
+May 12 13:41:33.148 TRCE Got Accepted from 3, idx: 1, chosen_idx: 0
+May 12 13:41:33.161 TRCE Got Accepted from 1, idx: 1, chosen_idx: 0
+May 12 13:41:33.167 TRCE Got Accepted from 2, idx: 1, chosen_idx: 1
+May 12 13:41:33.174 TRCE Got Accepted from 4, idx: 1, chosen_idx: 1
+May 12 13:41:39.355 TRCE Incoming Forwarded Proposal
+May 12 13:41:39.383 TRCE Got Accepted from 1, idx: 2, chosen_idx: 1
+May 12 13:41:39.387 TRCE Got Accepted from 4, idx: 2, chosen_idx: 1
+May 12 13:41:39.692 TRCE Got Accepted from 3, idx: 2, chosen_idx: 2
+May 12 13:41:39.699 TRCE Got Accepted from 2, idx: 2, chosen_idx: 2
+ 0, pid: 5 }
+May 12 13:41:29.856 TRCE Initiate new heartbeat round: 3
+May 12 13:41:29.867 TRCE Heartbeat request from 2
+May 12 13:41:29.904 TRCE Heartbeat request from 1
+May 12 13:41:30.338 TRCE Heartbeat request from 4
+May 12 13:41:30.340 TRCE Heartbeat request from 3
+May 12 13:41:30.345 TRCE Heartbeat request from 2
+May 12 13:41:30.686 TRCE Heartbeat timeout round: 3
+May 12 13:41:30.691 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, false), (Ballot { n: 0, priority: 0, pid: 3 }, true)]
+May 12 13:41:30.694 TRCE Initiate new heartbeat round: 4
+May 12 13:41:30.699 TRCE Heartbeat request from 3
+May 12 13:41:30.703 TRCE Heartbeat request from 4
+May 12 13:41:30.763 TRCE Heartbeat request from 1
+May 12 13:41:31.294 TRCE Heartbeat timeout round: 4
+May 12 13:41:31.299 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true)]
+May 12 13:41:31.302 TRCE Initiate new heartbeat round: 5
+May 12 13:41:31.305 TRCE Heartbeat request from 2
+May 12 13:41:31.313 TRCE Heartbeat request from 4
+May 12 13:41:31.635 TRCE Heartbeat request from 1
+May 12 13:41:31.638 TRCE Heartbeat request from 3
+May 12 13:41:31.640 TRCE Heartbeat timeout round: 5
+May 12 13:41:31.644 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true)]
+May 12 13:41:31.650 TRCE Initiate new heartbeat round: 6
+May 12 13:41:31.708 TRCE Heartbeat request from 1
+May 12 13:41:31.737 TRCE Heartbeat request from 2
+May 12 13:41:32.065 TRCE Heartbeat request from 4
+May 12 13:41:32.068 TRCE Heartbeat request from 3
+May 12 13:41:32.130 TRCE Heartbeat request from 2
+May 12 13:41:32.246 TRCE Heartbeat timeout round: 6
+May 12 13:41:32.250 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true)]
+May 12 13:41:32.253 TRCE Initiate new heartbeat round: 7
+May 12 13:41:32.475 TRCE Heartbeat request from 3
+May 12 13:41:32.632 TRCE Heartbeat request from 1
+May 12 13:41:32.655 TRCE Heartbeat request from 4
+May 12 13:41:33.150 TRCE Heartbeat timeout round: 7
+May 12 13:41:33.155 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true)]
+May 12 13:41:33.166 TRCE Initiate new heartbeat round: 8
+May 12 13:41:33.176 TRCE Heartbeat request from 2
+May 12 13:41:33.179 TRCE Heartbeat request from 1
+May 12 13:41:33.181 TRCE Heartbeat request from 4
+May 12 13:41:33.257 TRCE Heartbeat request from 3
+May 12 13:41:33.673 TRCE Heartbeat request from 2
+May 12 13:41:33.676 TRCE Heartbeat timeout round: 8
+May 12 13:41:33.706 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true)]
+May 12 13:41:33.725 TRCE Initiate new heartbeat round: 9
+May 12 13:41:33.736 TRCE Heartbeat request from 1
+May 12 13:41:33.743 TRCE Heartbeat request from 3
+May 12 13:41:34.073 TRCE Heartbeat request from 4
+May 12 13:41:34.076 TRCE Heartbeat request from 2
+May 12 13:41:34.120 TRCE Heartbeat timeout round: 9
+May 12 13:41:34.127 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true)]
+May 12 13:41:34.130 TRCE Initiate new heartbeat round: 10
+May 12 13:41:34.215 TRCE Heartbeat request from 1
+May 12 13:41:34.647 TRCE Heartbeat request from 3
+May 12 13:41:34.674 TRCE Heartbeat request from 2
+May 12 13:41:34.711 TRCE Heartbeat request from 4
+May 12 13:41:35.079 TRCE Heartbeat timeout round: 10
+May 12 13:41:35.100 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true)]
+May 12 13:41:35.115 TRCE Initiate new heartbeat round: 11
+May 12 13:41:35.126 TRCE Heartbeat request from 4
+May 12 13:41:35.131 TRCE Heartbeat request from 1
+May 12 13:41:35.312 TRCE Heartbeat request from 2
+May 12 13:41:35.345 TRCE Heartbeat request from 3
+May 12 13:41:35.429 TRCE Heartbeat timeout round: 11
+May 12 13:41:35.432 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true)]
+May 12 13:41:35.434 TRCE Initiate new heartbeat round: 12
+May 12 13:41:35.509 TRCE Heartbeat request from 1
+May 12 13:41:35.860 TRCE Heartbeat request from 4
+May 12 13:41:35.864 TRCE Heartbeat request from 3
+May 12 13:41:36.265 TRCE Heartbeat timeout round: 12
+May 12 13:41:36.274 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true)]
+May 12 13:41:36.284 TRCE Initiate new heartbeat round: 13
+May 12 13:41:36.290 TRCE Heartbeat request from 2
+May 12 13:41:36.298 TRCE Heartbeat request from 1
+May 12 13:41:36.482 TRCE Heartbeat request from 4
+May 12 13:41:36.522 TRCE Heartbeat request from 3
+May 12 13:41:36.645 TRCE Heartbeat request from 2
+May 12 13:41:36.670 TRCE Heartbeat timeout round: 13
+May 12 13:41:36.676 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true)]
+May 12 13:41:36.683 TRCE Initiate new heartbeat round: 14
+May 12 13:41:36.832 TRCE Heartbeat request from 1
+May 12 13:41:36.870 TRCE Heartbeat request from 4
+May 12 13:41:37.100 TRCE Heartbeat request from 3
+May 12 13:41:37.503 TRCE Heartbeat request from 2
+May 12 13:41:37.506 TRCE Heartbeat timeout round: 14
+May 12 13:41:37.513 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true)]
+May 12 13:41:37.515 TRCE Initiate new heartbeat round: 15
+May 12 13:41:37.522 TRCE Heartbeat request from 1
+May 12 13:41:37.658 TRCE Heartbeat request from 4
+May 12 13:41:37.790 TRCE Heartbeat request from 3
+May 12 13:41:37.828 TRCE Heartbeat request from 2
+May 12 13:41:37.902 TRCE Heartbeat timeout round: 15
+May 12 13:41:37.906 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true)]
+May 12 13:41:37.909 TRCE Initiate new heartbeat round: 16
+May 12 13:41:37.972 TRCE Heartbeat request from 1
+May 12 13:41:38.336 TRCE Heartbeat request from 4
+May 12 13:41:38.345 TRCE Heartbeat request from 3
+May 12 13:41:38.350 TRCE Heartbeat request from 2
+May 12 13:41:38.688 TRCE Heartbeat timeout round: 16
+May 12 13:41:38.696 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true)]
+May 12 13:41:38.709 TRCE Initiate new heartbeat round: 17
+May 12 13:41:38.717 TRCE Heartbeat request from 1
+May 12 13:41:38.721 TRCE Heartbeat request from 4
+May 12 13:41:38.753 TRCE Heartbeat request from 3
+May 12 13:41:38.964 TRCE Heartbeat request from 2
+May 12 13:41:39.334 TRCE Heartbeat timeout round: 17
+May 12 13:41:39.340 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true)]
+May 12 13:41:39.344 TRCE Initiate new heartbeat round: 18
+May 12 13:41:39.357 TRCE Heartbeat request from 4
+May 12 13:41:39.369 TRCE Heartbeat request from 1
+May 12 13:41:39.668 TRCE Heartbeat request from 3
+May 12 13:41:39.672 TRCE Heartbeat request from 2
+May 12 13:41:39.763 TRCE Heartbeat timeout round: 18
+May 12 13:41:39.769 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true)]
+May 12 13:41:39.772 TRCE Initiate new heartbeat round: 19
+May 12 13:41:39.838 TRCE Heartbeat request from 1
+May 12 13:41:40.068 TRCE Heartbeat request from 3
+May 12 13:41:40.413 TRCE Heartbeat request from 4
+May 12 13:41:40.416 TRCE Heartbeat request from 2
+May 12 13:41:40.419 TRCE Heartbeat timeout round: 19
+May 12 13:41:40.431 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true)]
+May 12 13:41:40.440 TRCE Initiate new heartbeat round: 20
+May 12 13:41:40.784 TRCE Heartbeat request from 4
+May 12 13:41:40.787 TRCE Heartbeat request from 1
+May 12 13:41:40.817 TRCE Heartbeat request from 2
+May 12 13:41:41.185 TRCE Heartbeat request from 3
+May 12 13:41:41.196 TRCE Heartbeat timeout round: 20
+May 12 13:41:41.201 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true)]
+May 12 13:41:41.205 TRCE Initiate new heartbeat round: 21
+May 12 13:41:41.215 TRCE Heartbeat request from 1
+May 12 13:41:41.318 TRCE Heartbeat request from 3
+May 12 13:41:41.444 TRCE Heartbeat request from 4
+May 12 13:41:41.894 TRCE Heartbeat timeout round: 21
+May 12 13:41:41.901 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true)]
+May 12 13:41:41.913 TRCE Initiate new heartbeat round: 22
+May 12 13:41:41.916 TRCE Heartbeat request from 1
+May 12 13:41:41.920 TRCE Heartbeat request from 2
+May 12 13:41:41.922 TRCE Heartbeat request from 4
+May 12 13:41:42.034 TRCE Heartbeat request from 3
+May 12 13:41:42.049 TRCE Heartbeat request from 2
+May 12 13:41:42.453 TRCE Heartbeat timeout round: 22
+May 12 13:41:42.482 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true), (Ballot { n: 0, priority: 0, pid: 3 }, true)]
+May 12 13:41:42.496 TRCE Initiate new heartbeat round: 23
+May 12 13:41:42.510 TRCE Heartbeat request from 4
+May 12 13:41:42.517 TRCE Heartbeat request from 3
+May 12 13:41:42.521 TRCE Heartbeat request from 1
+May 12 13:41:42.715 TRCE Heartbeat request from 2
+May 12 13:41:42.868 TRCE Heartbeat timeout round: 23
+May 12 13:41:42.877 DEBG Received a majority of heartbeats [(Ballot { n: 0, priority: 0, pid: 3 }, true), (Ballot { n: 0, priority: 0, pid: 1 }, true), (Ballot { n: 0, priority: 0, pid: 4 }, true), (Ballot { n: 0, priority: 0, pid: 2 }, true)]
+May 12 13:41:42.886 TRCE Initiate new heartbeat round: 24
+May 12 13:41:42.907 TRCE Heartbeat request from 1
